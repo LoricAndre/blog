@@ -36,9 +36,10 @@ resource-path: ["."]
 verbosity: INFO
 # log-file: log.json
 
-table-of-contents: true
-toc-depth: 2
-number-sections: false
+table-of-contents: false
+# toc-depth: 2
+# toc-title: Table of contents
+# number-sections: false
 
 # either a style name of a style definition file:
 highlight-style: pygments

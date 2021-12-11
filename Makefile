@@ -13,5 +13,5 @@ public/%.html: md/%.md style/main.css style/header.html style/nav.html
 	IN=$< OUT=$@ pandoc -d scripts/pandoc.yaml
 
 install: all
-	echo "Installing compiled html to $(PATH) and giving ownership to $(USER)."
-	sudo cp public/*.html $(PATH) && sudo chown -R $(USER) $(PATH)
+	echo "Installing compiled html to $(PATH) as $(USER)."
+	sudo -u $(USER) cp public/*.html $(PATH)

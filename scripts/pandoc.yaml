@@ -18,7 +18,6 @@ input-files:
 # priority over the included ones.
 defaults: []
 
-  #template: letter
 standalone: true
 self-contained: true
 

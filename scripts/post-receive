@@ -8,7 +8,7 @@ do
 	then
 		echo "Ref $ref received. Deploying ${BRANCH} branch to production..."
         git fetch
-		git checkout -f origin
+		git checkout -f $BRANCH
         make install
 	else
 		echo "Ref $ref received. Doing nothing: only the ${BRANCH} branch may be deployed on this server."

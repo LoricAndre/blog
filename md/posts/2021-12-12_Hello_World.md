@@ -1,6 +1,4 @@
----
-title: Hello World!
----
+% Hello World!
 
 
 Hi everyone! (well probably no one for now)

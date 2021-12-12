@@ -7,8 +7,8 @@ echo "<ul>" > $LIST
 for f in $(ls md/posts/); do
     if [[ $f != list.md ]]; then
         echo "Processing post $f"
-        html="$(echo $f | sed 's/\(.*\)\.md/\1.html/')"
-        echo "<li><a href=\"$html\">$f</a></li>" >> $LIST
+        name="$(echo $f | sed 's/\(.*\)\.md/\1/')"
+        echo "<li><a href=\"$name.html\">$name</a></li>" >> $LIST
     fi
 done
 

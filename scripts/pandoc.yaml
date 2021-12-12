@@ -1,4 +1,4 @@
-from: markdown+emoji
+from: markdown+emoji+escaped_line_breaks+task_lists+simple_tables+multiline_tables+yaml_metadata_block+superscript+subscript
 # reader: may be used instead of from:
 to: html5
 # writer: may be used instead of to:

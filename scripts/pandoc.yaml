@@ -29,7 +29,7 @@ metadata: []
 # Note that these take files, not their contents:
 include-before-body: [style/nav.html]
 include-after-body: []
-include-in-header: []
+include-in-header: [style/header.html]
 resource-path: ["."]
 
 verbosity: INFO

@@ -11,6 +11,6 @@ do
 		git checkout -f $BRANCH
         make install
 	else
-		echo "Ref $ref received. Doing nothing: only the ${BRANCH} branch may be deployed on this server."
+		echo "Ref $ref received. Doing nothing: only the ${BRANCH} branch may be deployed on this server. Please push to ${BRANCH} if you wish your changes to get deployed."
 	fi
 done

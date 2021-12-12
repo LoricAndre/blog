@@ -9,7 +9,7 @@ all: scripts/compile.sh public/blog.html public/posts/list.html
 	scripts/compile.sh ./md/posts
 	echo "All done !"
 
-public/posts/list.html:
+public/posts/list.html: scripts/build_blog_list.sh
 	scripts/build_blog_list.sh
 
 public/blog.html: md/blog.md public/posts/list.html scripts/pandoc.yaml style/main.css

@@ -1,6 +1,6 @@
 # blog
 
-This simple website is made using pandoc, make and bash as its core. These are the only dependencies I'm aware of, with pandoc having to be version `>= 2.8` for the `--defaults` option to be available.
+This simple website is made using pandoc, make and bash as its core. These are the only dependencies I'm aware of, with pandoc having to be version `>= 2.8` for the `--defaults` option to be available (be careful on ubuntu, the main repos include an older version).
 
 # Deployment
 Simply clone this repo on the target server. If you cannot serve directly the `public` folder as the current user, run `INSTALL_DIR=<path> INSTALL_USER=<user> make install` to compile and install the site to the desired folder as the needed user. Otherwise, just run `make`

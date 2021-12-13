@@ -3,8 +3,9 @@ pagetitle: Home
 ---
 
 ## Welcome !
-This is my blog where I'll post (when I'll feel like it) about random events or subjects. You'll probably see articles about linux, neovim, my matrix and email servers and other random topics.
-<br>
-This site itself is one of my [projects](./projects.html) and will probably be the topic of one of the first posts, that I will link here for those interested in how it works.
-<br>
+
+This site is meant to be a collection of my projects and thoughts about different topics, including vim/neovim, linux, cybersec, scripting and programming languages and other random, possibly non-tech, matters.
+
+The goal is to post at least once a week. This site itself is one of my [projects](projects.html), written using common GNU/posix-compliant tools. It's as simple as possible (the scripts and makefile are currently under 100 SLOC), using pandoc to translate from markdown to html.
+
 Feel free to give feedback, rant or ask questions at contact[at]loric.eu

@@ -9,7 +9,7 @@ all: scripts/compile.sh public/blog.html public/posts/list.html
 	scripts/compile.sh ./md/posts
 	echo "All done !"
 
-public/posts/list.html: scripts/build_blog_list.sh
+public/posts/list.html: FORCE
 	scripts/build_blog_list.sh
 
 public/blog.html: md/blog.md public/posts/list.html scripts/pandoc.yaml style/main.css
@@ -27,3 +27,6 @@ public/%.html: md/%.md scripts/pandoc.yaml style/main.css
 install: all
 	echo "Installing compiled html to $(INSTALL_PATH) as $(INSTALL_USER)."
 	sudo -u $(INSTALL_USER) cp public/*.html $(INSTALL_PATH)
+
+
+FORCE: ;
